@@ -37,7 +37,9 @@ int main(int argc, char const *argv[])
 
   int lin1, col1;
   int lin2, col2;
-  int el;
+  int el, p;
+
+  p = atoi(argv[3]);
 
   //Abre o primeiro arquivo com a matriz 1 e preenche a matriz 1 para fazer a multiplicação
 
