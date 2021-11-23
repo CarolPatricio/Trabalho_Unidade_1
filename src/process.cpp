@@ -160,12 +160,13 @@ int main(int argc, char const *argv[])
       auto time = chrono::duration_cast<chrono::milliseconds>(end - start).count();
       cout << "Tempo: " << time << "ms" << endl;
 
-      dataFileResult << lin1 << ' ' << col2 << endl;
+      dataFile << lin1 << ' ' << col2 << endl;
       for (size_t w = 0; w < resultVector.size(); w++)
       {
-        dataFileResult << resultVector[w];
+        //cout << resultVector[w];
+        dataFile << resultVector[w];
       }
-      dataFileResult << time << endl;
+      dataFile << time << endl;
 
       exit(0);
     }
