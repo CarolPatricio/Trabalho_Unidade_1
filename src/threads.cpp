@@ -123,8 +123,7 @@ int main(int argc, char const *argv[])
   {
     void *k;
 
-    //Joining all threads and collecting return value
-    pthread_join(threads[i], &k);
+      pthread_join(threads[i], &k);
 
     int *p = (int *)k;
     printf("%d ", *p);
