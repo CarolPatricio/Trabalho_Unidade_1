@@ -103,7 +103,7 @@ int main(int argc, char const *argv[])
 
       stringstream dataFileResult;
 
-      dataFileResult << "../data/process" << i + 1 << ".txt";
+      dataFileResult << "../data/process/process" << i + 1 << ".txt";
 
       fstream dataFile;
       dataFile.open(dataFileResult.str(), fstream::out);
@@ -183,8 +183,6 @@ int main(int argc, char const *argv[])
     wait(NULL);
     z++;
   }
-
-  //TODO
 
   return 0;
 }
