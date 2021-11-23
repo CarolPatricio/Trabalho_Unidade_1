@@ -26,7 +26,6 @@ void *multMatrices(void *arg)
   pthread_exit(p);
 }
 
-//Driver code
 int main(int argc, char const *argv[])
 {
 
@@ -119,7 +118,7 @@ int main(int argc, char const *argv[])
                      multMatrices, (void *)(data));
     }
 
-  printf("RESULTANT MATRIX IS :- \n");
+  printf("Resultado :- \n");
   for (i = 0; i < max; i++)
   {
     void *k;
